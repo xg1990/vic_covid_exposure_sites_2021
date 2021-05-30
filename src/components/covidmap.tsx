@@ -90,6 +90,10 @@ export function CovidMap() {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+        <TileLayer
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}"
+        />
         {coviddata.filter(
           (record)=>{
             if (selectedDate === null) return true;

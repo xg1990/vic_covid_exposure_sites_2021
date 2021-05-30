@@ -6,6 +6,7 @@ import os
 
 
 API_KEY = os.getenv('GCP_API_KEY')
+assert API_KEY is not None
 
 def retrieve_xy(record):
     qry_address = (f"{record['Site_title']}, {record['Site_streetaddress']} "
@@ -13,7 +14,7 @@ def retrieve_xy(record):
     gcp_endpoint = "https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={API_KEY}".format(
         address=qry_address, API_KEY=API_KEY
     )
-    with requests_cache.CachedSession('temp_cache', expire_after=86400) as session:
+    with requests_cache.CachedSession('temp_cache', expire_after=-1) as session:
         raw = session.get(gcp_endpoint).json()
     if raw['status'] != 'OK' or len(raw['results']) == 0:
         return (None, None)

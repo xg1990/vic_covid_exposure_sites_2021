@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/vic_covid_exposure_sites_2021/static/css/main.3b42d6f0.chunk.css",
+    "main.js": "/vic_covid_exposure_sites_2021/static/js/main.dc981dfd.chunk.js",
+    "main.js.map": "/vic_covid_exposure_sites_2021/static/js/main.dc981dfd.chunk.js.map",
+    "runtime-main.js": "/vic_covid_exposure_sites_2021/static/js/runtime-main.651213cd.js",
+    "runtime-main.js.map": "/vic_covid_exposure_sites_2021/static/js/runtime-main.651213cd.js.map",
+    "static/css/2.c1e28d34.chunk.css": "/vic_covid_exposure_sites_2021/static/css/2.c1e28d34.chunk.css",
+    "static/js/2.0e854bbe.chunk.js": "/vic_covid_exposure_sites_2021/static/js/2.0e854bbe.chunk.js",
+    "static/js/2.0e854bbe.chunk.js.map": "/vic_covid_exposure_sites_2021/static/js/2.0e854bbe.chunk.js.map",
+    "static/js/3.22be1ae4.chunk.js": "/vic_covid_exposure_sites_2021/static/js/3.22be1ae4.chunk.js",
+    "static/js/3.22be1ae4.chunk.js.map": "/vic_covid_exposure_sites_2021/static/js/3.22be1ae4.chunk.js.map",
+    "index.html": "/vic_covid_exposure_sites_2021/index.html",
+    "static/css/2.c1e28d34.chunk.css.map": "/vic_covid_exposure_sites_2021/static/css/2.c1e28d34.chunk.css.map",
+    "static/css/main.3b42d6f0.chunk.css.map": "/vic_covid_exposure_sites_2021/static/css/main.3b42d6f0.chunk.css.map",
+    "static/js/2.0e854bbe.chunk.js.LICENSE.txt": "/vic_covid_exposure_sites_2021/static/js/2.0e854bbe.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.651213cd.js",
+    "static/css/2.c1e28d34.chunk.css",
+    "static/js/2.0e854bbe.chunk.js",
+    "static/css/main.3b42d6f0.chunk.css",
+    "static/js/main.dc981dfd.chunk.js"
+  ]
+}

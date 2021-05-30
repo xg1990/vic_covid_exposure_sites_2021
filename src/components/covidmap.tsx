@@ -82,7 +82,7 @@ export function CovidMap() {
               />
             </Typography>
           </div>
-          <Button color="inherit">Github</Button>
+          <Button color="inherit" href="https://github.com/xg1990/vic_covid_exposure_sites_2021">Github</Button>
         </Toolbar>
       </AppBar>
       <MapContainer center={[-37.8136, 144.9631]} zoom={11} scrollWheelZoom={true}>

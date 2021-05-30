@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://xg1990.github.io/vic_covid_exposure_sites_2021",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xg1990/vic_covid_exposure_sites_2021.git"
+  },
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",

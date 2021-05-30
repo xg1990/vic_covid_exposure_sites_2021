@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Quick Start
 
-Pelase visit: https://xg1990.github.io/vic_covid_exposure_sites_2021/
+Pelase visit: https://covidvic.xg1990.com/
 
 ## Data Source
 

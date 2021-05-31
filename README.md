@@ -10,3 +10,7 @@ Pelase visit: https://covidvic.xg1990.com/
 ## Data Source
 
 https://www.coronavirus.vic.gov.au/exposure-sites
+
+## Known Limitation
+
+- Cannot handle bus routes yet

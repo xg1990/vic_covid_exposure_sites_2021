@@ -3,3 +3,4 @@ pandas
 requests
 requests-cache
 aiohttp
+numpy

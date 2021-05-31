@@ -1,0 +1,32 @@
+
+name: Refresh CovidVIC Map
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repository code
+      - name: Checkout code into workspace directory
+        uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install deps
+        run: |
+          pip install -r get_data/requirements.txt
+      - name: Use Node.js 15
+        uses: actions/setup-node@v1
+        with:
+          node-version: 15
+      - run: npm install
+      - run: npm run deploy
+        env: 
+          CI: false

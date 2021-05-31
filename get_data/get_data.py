@@ -1,7 +1,6 @@
 import requests_cache
 import pandas as pd
 import click
-import tqdm
 import os
 import aiohttp
 import asyncio

@@ -2,3 +2,4 @@ click
 pandas
 requests
 requests-cache
+aiohttp

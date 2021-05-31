@@ -22,11 +22,19 @@ jobs:
       - name: Install deps
         run: |
           pip install -r get_data/requirements.txt
+      - name: fetch data
+        env: 
+          GCP_API_KEY: ${{ secrets.API_KEY }}
+        run: python get_data.py -o ../src/data.json
+        working-directory: get_data
       - name: Use Node.js 15
         uses: actions/setup-node@v1
         with:
           node-version: 15
       - run: npm install
-      - run: npm run deploy
-        env: 
-          CI: false
+      - run: npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.GH_PAGES_DEPLOY }}
+          publish_dir: ./build

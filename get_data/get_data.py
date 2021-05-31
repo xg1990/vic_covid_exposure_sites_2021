@@ -7,13 +7,13 @@ import asyncio
 import numpy as np
 import warnings
 
-API_KEY = os.getenv('GCP_API_KEY')
+API_KEY = os.environ.get('GCP_API_KEY')
 assert API_KEY is not None
 
 
 # Limit the cocurrent worker
 # https://stackoverflow.com/questions/48483348/how-to-limit-concurrency-with-python-asyncio
-sem = asyncio.Semaphore(10)
+sem = asyncio.Semaphore(5)
 
 
 async def retrieve_xy(record):
@@ -65,6 +65,8 @@ def retrieve_data(output):
         warnings.warn(f"incorrectly parsed {sum(~correct_records)} addresses:")
         warnings.warn(str(df))
         warnings.warn(str(df[['Site_streetaddress', 'Suburb', 'Site_postcode', 'lat', 'lon']][~correct_records]))
+        if sum(~correct_records) > 10:
+            raise ValueError("too many incorrect addresses")
 
     df.to_json(output, orient='records')
 
